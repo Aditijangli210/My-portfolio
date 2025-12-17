@@ -13,13 +13,13 @@
 
   <style>
     :root {
-      --bg: #0b1220;
-      --glass: rgba(255, 255, 255, 0.08);
-      --text: #e5e7eb;
-      --muted: #9ca3af;
-      --primary: #38bdf8;
-      --secondary: #6366f1;
-      --accent: #22d3ee;
+      --bg: #f8fafc;
+      --glass: rgba(255, 255, 255, 0.7);
+      --text: #0f172a;
+      --muted: #475569;
+      --primary: #2563eb;
+      --secondary: #38bdf8;
+      --accent: #22c55e;
     }
 
     [data-theme="light"] {
@@ -116,10 +116,10 @@
     /* Hero */
     .hero {
       min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      gap: 1.2rem;
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      align-items: center;
+      gap: 2rem;
     }
 
     .hero h1 {
@@ -275,10 +275,15 @@
 </header>
 
 <section id="home" class="hero visible">
-  <h1>Hello, I’m <span>Aditi Jangli</span></h1>
-  <h3>Assistant Professor | Pharmacology</h3>
-  <p>Pharmacology graduate and academic professional specializing in teaching, research, and scientific communication, with hands-on expertise in wet lab techniques and data analysis.</p>
-  <a href="#contact" class="btn">Contact Me</a>
+  <div>
+    <h1>Hello, I’m <span>Aditi Jangli</span></h1>
+    <h3>Assistant Professor | Pharmacology</h3>
+    <p>Pharmacology graduate and academic professional specializing in teaching, research, and scientific communication, with hands-on expertise in wet lab techniques and data analysis.</p>
+    <a href="#contact" class="btn">Contact Me</a>
+  </div>
+  <div class="glass card" style="text-align:center">
+    <img src="https://i.ibb.co/fzdH5HDN/IMG-2024.jpg" alt="Aditi Jangli" style="width:100%;max-width:300px;border-radius:20px;object-fit:cover;" />
+  </div>
 </section>
 
 <section id="about" class="glass">
